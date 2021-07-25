@@ -57,6 +57,7 @@
 
 
 # #7
+# #Не понял как работает логика (может ли конь ходить в данную клетку или нет)
 # print('Введите местоположение коня: ')
 # place_horse_one = float(input(''))
 # place_horse_two = float(input(''))
@@ -64,8 +65,11 @@
 # print('Введите местоположение точки на доске:')
 # place_dot_one = float(input(''))
 # place_dot_two = float(input(''))
-# #
-# place_horse_one_revers = int((place_horse_one * 10) % 10)
-# place_horse_two_revers = int(place_horse_two * 10) % 10)
-# place_dot_one_revers = int((place_dot_one * 10) % 10)
-# place_dot_two_revers = int((place_dot_two * 10) % 10)
+#
+# place_horse_one_revers = int(place_horse_one * 10 % 10)
+# place_horse_two_revers = int(place_horse_two * 10 % 10)
+# place_dot_one_revers = int(place_dot_one * 10 % 10)
+# place_dot_two_revers = int(place_dot_two * 10 % 10)
+#
+#
+# print(f'Конь в клетке ({place_horse_one_revers}, {place_horse_two_revers}). Точка в клетке ({place_dot_one_revers}, {place_dot_two_revers}).')
