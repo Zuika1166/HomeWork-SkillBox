@@ -73,3 +73,5 @@
 #
 #
 # print(f'Конь в клетке ({place_horse_one_revers}, {place_horse_two_revers}). Точка в клетке ({place_dot_one_revers}, {place_dot_two_revers}).')
+
+#1
