@@ -157,3 +157,29 @@ def second_num(first_n, between_Digits):
         print('Изменённое второе число:', second_n)
 
         print('\nСумма чисел:', first_n + second_n)
+
+
+#8
+d_from = 0
+d_to = 4
+max_danger = float(input('Введите максимальное допустимый уровень опастности: '))
+
+depth = d_from + (d_to - d_from) / 2
+danger = depth ** 3 - 3 * depth ** 2 - 12 * depth + 10
+
+if max_danger < 0:
+    print('Ошибка! Максимально допустимый уровнь опастности, должно быть больше 0')
+else:
+    print('Depth:', depth, 'Danger:', danger)
+
+    while abs(danger) > max_danger:
+        if danger > 0:
+            d_from = depth
+        else:
+            d_to = depth
+
+        depth = d_from + (d_to - d_from) / 2
+        danger = depth ** 3 - 3 * depth ** 2 - 12 * depth + 10
+        print('Depth:', depth, 'Danger:', danger)
+
+    print('Приблизительная глубина безопастности кладки', depth, 'м')
